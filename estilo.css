@@ -1,0 +1,14 @@
+body{
+    background-color: grey;    
+}
+
+.oitava{
+    display: flex;
+}
+
+.branca{
+    background-color: white;
+    width: 50px;
+    height: 300px;
+    border: 1px solid #000;
+}
