@@ -1,9 +1,22 @@
+* {
+    /*A borda é considerada no calculo do tamanho*/
+    box-sizing: border-box;
+}
 body{
-    background-color: grey;    
+    background-color: grey;   
+    margin-left: 5%; 
+    
 }
 
-.oitava{
+.teclado{
     display: flex;
+}
+.oitava{
+    /*Vai fazer componente ocupar o tamanho para guardar todas as teclas*/
+    position: relative;
+    display: flex;
+    /*Valor padrão*/
+    flex-direction: row;
 }
 
 .branca{
@@ -12,3 +25,40 @@ body{
     height: 300px;
     border: 1px solid #000;
 }
+
+.preta{
+    /*Cria por cima dos elementos*/
+    position: absolute;
+    background-color: #000;
+    width: 30px;
+    height: 160px;
+
+    right: 20px;
+}
+
+/*A position:absolute do .preta está ligado ao .oitava por causa do position:relative */
+
+[cs]{
+    left:35px;
+}
+
+[ds]{
+    left: 85px;
+}
+
+[fs]{
+    left: 185px;
+}
+
+[gs]{
+    left: 235px;
+}
+
+[as]{
+    left: 285px;
+}
+
+.selecionada{
+    background-color: rgb(44, 212, 44);
+}
+

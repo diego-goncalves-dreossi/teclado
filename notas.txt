@@ -1,0 +1,7 @@
+Podemos criar atributos personalizados nas tags.
+São atributos que nós programamos, que não estão definidos como base.
+
+CSS
+Propriedades/atributos personalizadas do HTML
+[pp] {
+}
